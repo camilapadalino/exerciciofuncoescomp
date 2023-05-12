@@ -20,6 +20,9 @@ while controle:
     while True:
         try:
             numero = int(input("Insira um número inteiro: "))
+            if numero == 0:
+                controle = False
+                break
             if triangulo(numero) == True:
                 print(f'O número {numero} é triangular.')
             else:
